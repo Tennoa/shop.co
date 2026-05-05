@@ -1,0 +1,105 @@
+// ===== 1. Базовый сброс =====
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // ✅ Размеры включают padding и border
+  margin: 0;
+  padding: 0;
+}
+
+// ===== 2. Корень и тело =====
+:root {
+  font-size: 16px; // Базовый размер для rem
+  scroll-behavior: smooth; // Плавная прокрутка по якорям
+}
+
+html,
+body {
+  height: 100%; // Чтобы flex/grid работали на всю высоту
+  line-height: 1.5; // Удобный межстрочный интервал
+  -webkit-font-smoothing: antialiased; // Сглаживание шрифтов на macOS
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ===== 3. Типографика =====
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  text-wrap: balance; // Красивое перенос слов (современные браузеры)
+}
+
+p {
+  text-wrap: pretty; // Избегает висячие строки
+}
+
+// ===== 4. Списки и ссылки =====
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// ===== 5. Изображения и медиа =====
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%; // ✅ Адаптивность по умолчанию
+  height: auto;
+}
+
+// ===== 6. Формы =====
+input, button, textarea, select {
+  font: inherit; // Наследуют шрифт от родителя
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+textarea {
+  resize: vertical; // Разрешаем менять высоту, но не ширину
+}
+
+// ===== 7. Таблицы =====
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// ===== 8. Утилиты =====
+// Скрыть элемент, но оставить для скринридеров
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Убрать скроллбар, но оставить прокрутку (для горизонтальных слайдеров)
+.no-scrollbar {
+  -ms-overflow-style: none;  // IE и Edge
+  scrollbar-width: none;  // Firefox
+  
+  &::-webkit-scrollbar {
+    display: none; // Chrome, Safari, Opera
+  }
+}
