@@ -1,7 +1,7 @@
 import "./HomePage.scss";
 import TopBar from "../../components/TopBar/TopBar";
 import Nav from "../../components/Nav/Nav";
-import Footer from "../../components/footer/Footer";
+import Footer from "../../components/Footer/Footer.jsx";
 
 
 function HomePage() {
