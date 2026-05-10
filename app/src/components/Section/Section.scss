@@ -1,0 +1,117 @@
+.section{
+  background-color: #000000;
+  .section__inner{
+    max-width: 1240px;
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    
+    justify-content: center;
+    .section__img{
+      max-width: 400px;
+      margin: 0 auto;
+      justify-content: center;
+      padding: 43px 0 ;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.section{
+  .section__inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .section__img{
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 43px 0;
+    }
+
+  }
+}
+  Footer{
+
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+.section{
+  .section__inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .section__img{
+      max-width: 400px;
+      margin: 0 auto;
+      justify-content: center;
+      padding: 43px 0;
+    }
+    .section__img--full {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+  }
+}
+Footer{}
+
+}
+
+@media  (max-width: 480px) {
+  .header{
+  .header__inner{
+    TopBar{}
+    Nav{}
+  }
+}
+.main{
+  .main__inner{
+    .hero__svg{
+      &.hero__svg_left{}
+    }
+    .hero__svg{
+      &.hero__svg_right{}
+    }
+    .main__text{
+      .text__title{}
+      .text__subtitle{}
+      .text__button{}
+      .text__statistics{
+        .statistics__brands{
+          .statistics__title{}
+          .statistics__subtitle{}
+        }
+        .statistics__products{
+          .statistics__title{}
+          .statistics__subtitle{}
+        }
+        .statistics__customers{
+          .statistics__title{}
+          .statistics__subtitle{}
+        }
+      }
+    }
+  }
+}
+.section{
+  .section__inner{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    .section__img{
+      max-width: 400px;
+      margin: 0 auto;
+      justify-content: center;
+      padding: 43px 0;
+    }
+    .section__img--full{
+      text-align: center;
+      grid-column: 1 / -1;
+    }
+
+  }
+}
+Footer{}
+}

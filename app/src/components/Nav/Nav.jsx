@@ -46,11 +46,14 @@ function Nav() {
       />
     </div>
     <div className="nav__icons">
+      <button className="nav__icon nav__icon--search " aria-label="Search">
+        <img src="./app/src/assets/svg/Vector3.svg" alt="" />
+      </button>
       <button className="nav__icon" aria-label="Shopping cart">
         <img src="./app/src/assets/svg/Vector2.svg" alt="" />
       </button>
       <button className="nav__icon" aria-label="Account">
-        <img src="./app/src/assets/svg/Vector.svg" alt="" />
+        <img src="./app/src/assets/svg/Vector1.svg" alt="" />
       </button>
     </div>
   </div>

@@ -1,4 +1,5 @@
 import "./HomePage.scss";
+import Section from "../../components/Section/Section.jsx";
 import TopBar from "../../components/TopBar/TopBar";
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer.jsx";
@@ -16,12 +17,12 @@ function HomePage() {
       <div className="main">
         <div className="main__inner">
           <img
-            src="./Vector.svg"
+            src="./app/src/assets/svg/Vector.svg"
             alt="star"
             className="hero__svg hero__svg_left"
           />
           <img
-            src="./Vector.svg"
+            src="./app/src/assets/svg/Vector.svg"
             alt="star"
             className="hero__svg hero__svg_right"
           />
@@ -35,35 +36,26 @@ function HomePage() {
               of style.
             </p>
             <button className="text__button">Shop Now</button>
-            <div className="text__statistics">
-              <div className="statistics__brands">
-                <h2 className="statistics__title">200+</h2>
-                <p className="statistics__subtitle">International Brands</p>
+            <div className="statistics__container">
+              <div className="statistics__item statistics__item--border">
+                <h2 className="counter">200+</h2>
+                <p className="label">International Brands</p>
               </div>
-              <div className="statistics__products">
-                <h2 className="statistics__title">2000+</h2>
-                <p className="statistics__subtitle">High-Quality Products</p>
+              <div className="statistics__item">
+                <h2 className="counter">2,000+</h2>
+                <p className="label">High-Quality Products</p>
               </div>
-              <div className="statistics__customers">
-                <h2 className="statistics__title">30,000+</h2>
-                <p className="statistics__subtitle">Happy Customers</p>
+              <div className="statistics__item">
+                <h2 className="counter">30,000+</h2>
+                <p className="label">Happy Customers</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="section">
-        <div className="section__inner">
-          <img className="section__img" src="/Group.png" alt="" />
-          <img className="section__img" src="/Group-4.png" alt="" />
-          <img className="section__img" src="/Group-2.png" alt="" />
-          <img className="section__img" src="/Group-3.png" alt="" />
-          <img className="section__img" src="/Group-1.png" alt="" />
-        </div>
-      </div>
+      <Section/>
       <Footer />
     </>
-    
   );
 }
 

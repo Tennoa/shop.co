@@ -1,16 +1,16 @@
 .nav{
   .nav__inner{
-    max-width: 1600px;
+    max-width: 1240px;
     width: 100%;
-    margin: 10px auto;
-    padding: 0 20px;
+    margin: 24px auto;
     justify-content: space-between;
     display: flex;
     align-items: center;
     .nav_logo{
     }
       .nav__list{
-        width: 35%;
+        width:100%;
+        max-width: 321px;
         display: flex;
         justify-content: space-between;
         .list__item{
@@ -22,13 +22,11 @@
       .nav__search{
         display: flex;
         align-items: center;
-        width: 30%;
+        width: 45%;
         background-color: #F0F0F0;
         border-radius: 60px;
         padding:0 0 0 17px;
-        .nav__search-icon{
-          color: #00000089;
-        }
+        .nav__search-icon{color: #00000089;}
         .nav__search-input {
           font-family: Satoshi;
           width: 100%;
@@ -45,12 +43,23 @@
         }
       }
       .nav__icons{
+        width: 100%;
+        max-width:62px ;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        .nav__icon--search{
+          display: none;
+        }
         .nav__icon{
-          margin: 0 14px 0 14px;
+          align-items: center;
+          img{
+            height: 24px;
+          }
         }
       }
     }
-  }
+}
 
 @media (max-width: 1600px) {
   .nav{
@@ -64,7 +73,7 @@
     }
     .nav__search{
       .nav__search-icon{
-        path{}
+        
       }
       .nav__search-input{}
     }
@@ -121,7 +130,7 @@
 
     }
     .nav__search{
-      display: none;
+      
       .nav__search-icon{
         path{}
       }
@@ -154,7 +163,9 @@
       .nav__search-icon{
         path{}
       }
-      .nav__search-input{}
+      .nav__search-input{
+
+      }
     }
     .nav__icons{
       .nav__icon{
@@ -179,10 +190,13 @@
         .list__item{}
       }
       .nav__search{
+
         .nav__search-icon{
           path{}
         }
-        .nav__search-input{}
+        .nav__search-input{
+          
+        }
       }
       .nav__icons{
         .nav__icon{

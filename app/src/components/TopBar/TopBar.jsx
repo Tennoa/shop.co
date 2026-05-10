@@ -9,6 +9,7 @@ function TopBar() {
           <a className="TopBar__link" href="#">
             Sign Up Now
           </a>
+
         </p>
         <button className="TopBar__button" aria-label="Close">
           x

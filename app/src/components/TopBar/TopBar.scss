@@ -4,27 +4,29 @@
   background-color: rgb(0, 0, 0);
   color: #ffffff;
   .TopBar__inner {
-    max-width: 1600px;
+    max-width: 1240px;
     width: 100%;
     margin: 0 auto;
     padding: 10px 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: end;
     .TopBar__text {
+      max-width: 748px;
+      width: 100%;
+      font-size: 14px;
       flex-wrap: wrap;
-
       font-family: Abel;
       .TopBar__link {
       }
     }
     .TopBar__button {
-      position: absolute;
       font-size: 18px;
       font-weight: 500;
       right: 2%;
       font-family: Satoshi;
       display: flex;
-        justify-content: center;
+      justify-content: center;
     }
   }
 }
@@ -32,11 +34,8 @@
 @media (max-width: 1600px) {
   .TopBar{
     .TopBar__inner{
-
       .TopBar__text{
-
         .TopBar__link{
-
         }
       }
       .TopBar__button{
@@ -49,15 +48,11 @@
 @media (max-width: 1200px) {
   .TopBar{
     .TopBar__inner{
-
       .TopBar__text{
-
         .TopBar__link{
-
         }
       }
       .TopBar__button{
-
       }
     }
   }
@@ -66,11 +61,8 @@
 @media (max-width: 960px) {
   .TopBar{
     .TopBar__inner{
-
       .TopBar__text{
-
         .TopBar__link{
-
         }
       }
       .TopBar__button{
@@ -86,28 +78,25 @@
 @media (max-width: 768px) {
    .TopBar{
     .TopBar__inner{
-
       .TopBar__text{
-
         .TopBar__link{
-
         }
       }
       .TopBar__button{
-
       }
     }
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 768px){
   .TopBar{
     .TopBar__inner{
         display: flex;
         justify-content: center;
         align-items: center;
       .TopBar__text{
-        font-size: 12px;
+        font-family: Satoshi;
+        font-size: 14px;
         .TopBar__link{
           text-decoration:underline;
         }
