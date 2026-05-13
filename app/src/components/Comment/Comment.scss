@@ -1,0 +1,63 @@
+.comment{
+  .comment__inner{
+    width: 100%;
+    max-width: 1240px;
+    margin: 80px auto;
+
+    .comment__title{
+      font-size: 48px;
+      font-family: integral CF;
+      font-weight: 700;
+      padding-bottom: 40px;
+    }
+    .comment__btn__list{
+      display: flex;
+      justify-content: flex-end;
+      .comment__arrow_next{
+        padding: 0 16px;
+      }
+      .comment__arrow_back{
+
+      }
+    }
+    .comment__list{
+      display: flex;
+      gap:20px;
+      .comment__components{
+        display: flex;
+        max-width: 400px;
+        width: 100%;
+        padding: 28px 32px;
+        display: flex;
+        max-width: 400px;
+        width: 100%;
+        padding: 28px 32px;
+        .comment__cart{
+          .cart__list{
+            display: flex;
+            .list__star{
+            }
+          }
+
+          .cart__title{
+            padding:19px 0 16px 0 ;
+            display: flex;
+            .title__text{
+              font-weight: 800;
+              font-size: 20px;
+              font-family: Satoshi;
+            }
+            .title__star{
+              padding:  0 7px;
+
+            }
+          }
+          .cart__subtitle{
+            font-family: Satoshi;
+            color: rgba(0, 0, 0, 0.6);
+          }
+        }
+      }
+    }
+  }
+}

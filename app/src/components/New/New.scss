@@ -1,0 +1,80 @@
+.New{
+  .New__inner{
+    margin: 72px auto;
+    max-width: 1240px;
+    width: 100%;
+    .New__title{
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 48px;
+        font-family: Integral CF;
+    }
+    .New__list{
+      display: grid;
+        margin: 55px 0;
+        grid-template-columns: repeat(4, 1fr);
+      .list__item{
+        .item__title{
+          margin-top: 16px;
+          font-family: Satoshi;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .item__stars{
+          display: flex;
+          .stars__fill{
+            font-size: 25px;
+            color: #FFC633;
+            .stars__fill{
+            }
+          }
+          .stars__text{
+            font-weight: 500;
+            width: 70%;
+            margin-left: 10px;
+            font-size: 16px;
+            align-self: center; 
+            font-family: Satoshi;
+          }
+        }
+        
+        .list__pay{
+          display: flex;
+          .item__pay{
+            font-family: Satoshi;
+            font-size: 24px;
+            font-weight: 600;
+            &.item__pay--old{ 
+              color: rgba(0, 0, 0, 0.4);
+              text-decoration: line-through;
+              margin-left: 10px;
+            }
+          }
+          .sale{
+            display: flex;
+            margin-left: 10px;
+            padding: 6px 13px;
+            border-radius: 62px;
+            align-items: center;
+            font-family: Satoshi;
+            font-size: 12px;
+            font-weight: 600;
+            color: #FF0000;
+            background-color: rgba(255, 51, 51, 0.1);
+          }
+        }
+      }
+    }
+    .New__btn{
+      display: flex;
+      margin: 0 auto;
+      padding: 15px 80px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 62px;
+      font-family: Satoshi;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}

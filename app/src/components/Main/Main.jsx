@@ -1,20 +1,8 @@
-import "./HomePage.scss";
-import Section from "../../components/Section/Section.jsx";
-import TopBar from "../../components/TopBar/TopBar";
-import Nav from "../../components/Nav/Nav";
-import Footer from "../../components/Footer/Footer.jsx";
+import "./Main.scss";
 
-
-function HomePage() {
-  return (
-    <>
-      <header className="header">
-        <div className="header__inner">
-          <TopBar />
-          <Nav />
-        </div>
-      </header>
-      <div className="main">
+function Main() {
+    return(
+        <div className="main">
         <div className="main__inner">
           <img
             src="./app/src/assets/svg/Vector.svg"
@@ -53,10 +41,6 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <Section/>
-      <Footer />
-    </>
-  );
+    )
 }
-
-export default HomePage;
+export default Main;

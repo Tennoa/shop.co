@@ -1,7 +1,3 @@
-.header{
-  .header__inner{
-}
-}
 .main{
     background-image: url('./Rectangle 2.png');
     background-repeat: no-repeat;
@@ -90,16 +86,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  Footer{}
 }
 
 @media  (max-width: 390px) {
-    .header{
-    .header__inner{
-      TopBar{}
-      Nav{}
-    }
-  }
   .main{
     background-image: none;
     .main__inner{
@@ -157,7 +146,5 @@
       }
       }
     }
-  }
-  Footer{
   }
 }
