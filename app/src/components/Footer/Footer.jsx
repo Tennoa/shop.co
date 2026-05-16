@@ -1,3 +1,4 @@
+import { footerLinks } from '../../shared/constants';
 import './Footer.scss';
 
 function Footer() {
@@ -39,20 +40,16 @@ function Footer() {
                 <img src="/4.svg" alt="logo" className="network" />
               </div>
             </div>
-            <div className="list__colums">
-              <h6 className="list__title">COMPANY</h6>
-              <a className="list__subtitle">About</a>
-              <a className="list__subtitle">Features</a>
-              <a className="list__subtitle">Works</a>
-              <a className="list__subtitle">Career</a>
-            </div>
-            <div className="list__colums">
-              <h6 className="list__title">HELP</h6>
-              <a className="list__subtitle">Customer Support</a>
-              <a className="list__subtitle">Delivery Details</a>
-              <a className="list__subtitle">Terms & Conditions</a>
-              <a className="list__subtitle">Privacy Policy</a>
-            </div>
+            {footerLinks.map(column => (
+              <div className="list__colums">
+                <h6 className="list__title">{column.title}</h6>
+                {column.links.map(link => (
+                  <a className="list__subtitle" href={link.href}>
+                    {link.name}
+                  </a>
+                ))}
+              </div>
+            ))}
             <div className="list__colums">
               <h6 className="list__title">FAQ</h6>
               <a className="list__subtitle">Account</a>
@@ -70,7 +67,7 @@ function Footer() {
           </div>
           <div className="footer__cart">
             <span className="cart__rights">
-              Shop.co © 2000-2021, All rights reserved
+              Shop.co © 2000-{new Date().getFullYear()}, All rights reserved
             </span>
             <div className="cart__group">
               <img src="/Badge-5.png" alt="cart" className="cart__img" />
